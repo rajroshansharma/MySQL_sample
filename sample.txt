@@ -1,0 +1,212 @@
+#A working sample school database.
+#first step is to build a database.
+
+create database github_sample;
+
+#creating table for school information
+create table school_info(
+school_name VARCHAR(30),
+address VARCHAR(10),
+AREA INT);
+#if you want to see database's field formats
+describe school_info;
+
+create table student_table(
+name VARCHAR(25),
+roll_no INT PRIMARY KEY,
+father_name VARCHAR(25),
+mother_name VARCHAR(25),
+class INT,
+section VARCHAR (1),
+male VARCHAR(1));
+#if you want to see database's field formats
+describe student_table;
+
+#creating tables for school teachers.
+create table teacher_table(
+name VARCHAR(25),
+id INT PRIMARY KEY,
+gender VARCHAR(1),
+subject VARCHAR(12));
+#if you want to see database's field formats
+describe teacher_table;
+
+# creating table for school staffs.
+create table staff(
+name VARCHAR(25),
+id INT,
+post VARCHAR(18),
+gender VARCHAR(1));
+#if you want to see database's field formats
+describe staff;
+
+
+
+#now we will enter the values in different tables
+#starting with first table
+#the command for insering is.
+INSERT INTO school_info VALUES("xyz public school","sec-5",155);
+
+#now,insering the values in student_table
+INSERT INTO student_table VALUES("varun",39,"suresh","lakshmi",12,"A","M");
+INSERT INTO student_table VALUES("raj",34,"ghanshyama","anitaa",12,"A","M");
+INSERT INTO student_table VALUES("akash",17,"tudu","tuduu",12,"A","M");
+INSERT INTO student_table VALUES("mhehra",15,"fraque","govendi",52,"D","F");
+INSERT INTO student_table VALUES("abhishake",56,"govend","lila",56,"F","M");
+INSERT INTO student_table VALUES("varune",59,"sureesh","lakshmii",2,"I","M");
+INSERT INTO student_table VALUES("raaj",4,"ghanshyamm","anitaa",22,"T","M");
+INSERT INTO student_table VALUES("akasu",11,"tud","tudu",16,"L","M");
+INSERT INTO student_table VALUES("mhehrea",855,"fraquee","goveendi",58,"J","F");
+INSERT INTO student_table VALUES("abhishakke",46,"goveind","liila",54,"O","M");
+INSERT INTO student_table VALUES("roshan",89,"sureshh","sarawati",88,"A","M");
+INSERT INTO student_table VALUES("raju",84,"narayan","anitaa",10,"C","F");
+INSERT INTO student_table VALUES("akassh",67,"tuduu","tudou",12,"A","M");
+INSERT INTO student_table VALUES("mhehrea",35,"fraquee","govendi",52,"D","F");
+INSERT INTO student_table VALUES("abhishakee",36,"govenda","lilaa",56,"R","F");
+INSERT INTO student_table VALUES("varun",29,"suresh","lakshmi",12,"A","M");
+INSERT INTO student_table VALUES("raj",32,"ghanshyama","anitaa",12,"A","M");
+INSERT INTO student_table VALUES("akash",27,"tudu","tuduu",12,"A","M");
+INSERT INTO student_table VALUES("mhehra",275,"fraque","govendi",52,"D","F");
+INSERT INTO student_table VALUES("abhishake",56,"govend","lila",56,"F","M");
+INSERT INTO student_table VALUES("varune",69,"sureesh","lakshmii",2,"I","M");
+INSERT INTO student_table VALUES("raaj",4,"ghanshyamm","anitaa",22,"T","M");
+INSERT INTO student_table VALUES("akasu",57,"tud","tudu",16,"L","M");
+INSERT INTO student_table VALUES("mhehrea",55,"fraquee","goveendi",58,"J","F");
+INSERT INTO student_table VALUES("abhishakke",16,"goveind","liila",54,"O","M");
+INSERT INTO student_table VALUES("roshan",19,"sureshh","sarawati",88,"A","M");
+INSERT INTO student_table VALUES("raju",74,"narayan","anitaa",10,"C","F");
+INSERT INTO student_table VALUES("akassh",1,"tuduu","tudou",12,"A","M");
+INSERT INTO student_table VALUES("mhehrea",5,"fraquee","govendi",52,"D","F");
+INSERT INTO student_table VALUES("abhishakee",6,"govenda","lilaa",56,"R","F");
+INSERT INTO student_table VALUES("varun",9,"suresh","lakshmi",12,"A","M");
+INSERT INTO student_table VALUES("raj",3,"ghanshyama","anitaa",12,"A","M");
+INSERT INTO student_table VALUES("mhehra",165,"fraque","govendi",52,"D","F");
+INSERT INTO student_table VALUES("abhishake",356,"govend","lila",56,"F","M");
+INSERT INTO student_table VALUES("varune",589,"sureesh","lakshmii",2,"I","M");
+INSERT INTO student_table VALUES("raaj",99,"ghanshyamm","anitaa",22,"T","M");
+INSERT INTO student_table VALUES("akasu",197,"tud","tudu",16,"L","M");
+INSERT INTO student_table VALUES("mhehrea",15,"fraquee","goveendi",58,"J","F");
+INSERT INTO student_table VALUES("abhishakke",56,"goveind","liila",54,"O","M");
+INSERT INTO student_table VALUES("roshan",39,"sureshh","sarawati",88,"A","M");
+INSERT INTO student_table VALUES("raju",34,"narayan","anitaa",10,"C","F");
+INSERT INTO student_table VALUES("akassh",17,"tuduu","tudou",12,"A","M");
+INSERT INTO student_table VALUES("mhehrea",15,"fraquee","govendi",52,"D","F");
+INSERT INTO student_table VALUES("abhishakee",56,"govenda","lilaa",56,"R","F");
+INSERT INTO student_table VALUES("varun",39,"suresh","lakshmi",12,"A","M");
+INSERT INTO student_table VALUES("raj",34,"ghanshyama","anitaa",12,"A","M");
+INSERT INTO student_table VALUES("akash",17,"tudu","tuduu",12,"A","M");
+INSERT INTO student_table VALUES("mhehra",15,"fraque","govendi",52,"D","F");
+INSERT INTO student_table VALUES("abhishake",56,"govend","lila",56,"F","M");
+INSERT INTO student_table VALUES("varune",59,"sureesh","lakshmii",2,"I","M");
+INSERT INTO student_table VALUES("raaj",4,"ghanshyamm","anitaa",22,"T","M");
+INSERT INTO student_table VALUES("akasu",11,"tud","tudu",16,"L","M");
+INSERT INTO student_table VALUES("mhehrea",855,"fraquee","goveendi",58,"J","F");
+INSERT INTO student_table VALUES("abhishakke",46,"goveind","liila",54,"O","M");
+INSERT INTO student_table VALUES("roshan",89,"sureshh","sarawati",88,"A","M");
+INSERT INTO student_table VALUES("raju",84,"narayan","anitaa",10,"C","F");
+INSERT INTO student_table VALUES("akassh",67,"tuduu","tudou",12,"A","M");
+INSERT INTO student_table VALUES("mhehrea",35,"fraquee","govendi",52,"D","F");
+INSERT INTO student_table VALUES("abhishakee",36,"govenda","lilaa",56,"R","F");
+INSERT INTO student_table VALUES("varun",29,"suresh","lakshmi",12,"A","M");
+INSERT INTO student_table VALUES("raj",32,"ghanshyama","anitaa",12,"A","M");
+INSERT INTO student_table VALUES("akash",27,"tudu","tuduu",12,"A","M");
+INSERT INTO student_table VALUES("mhehra",275,"fraque","govendi",52,"D","F");
+INSERT INTO student_table VALUES("abhishake",56,"govend","lila",56,"F","M");
+INSERT INTO student_table VALUES("varune",69,"sureesh","lakshmii",2,"I","M");
+INSERT INTO student_table VALUES("raaj",4,"ghanshyamm","anitaa",22,"T","M");
+INSERT INTO student_table VALUES("akasu",57,"tud","tudu",16,"L","M");
+INSERT INTO student_table VALUES("mhehrea",55,"fraquee","goveendi",58,"J","F");
+INSERT INTO student_table VALUES("abhishakke",16,"goveind","liila",54,"O","M");
+INSERT INTO student_table VALUES("roshan",19,"sureshh","sarawati",88,"A","M");
+INSERT INTO student_table VALUES("raju",74,"narayan","anitaa",10,"C","F");
+INSERT INTO student_table VALUES("akassh",1,"tuduu","tudou",12,"A","M");
+INSERT INTO student_table VALUES("mhehrea",5,"fraquee","govendi",52,"D","F");
+INSERT INTO student_table VALUES("abhishakee",6,"govenda","lilaa",56,"R","F");
+INSERT INTO student_table VALUES("varun",9,"suresh","lakshmi",12,"A","M");
+INSERT INTO student_table VALUES("raj",3,"ghanshyama","anitaa",12,"A","M");
+INSERT INTO student_table VALUES("mhehra",165,"fraque","govendi",52,"D","F");
+INSERT INTO student_table VALUES("abhishake",356,"govend","lila",56,"F","M");
+INSERT INTO student_table VALUES("varune",589,"sureesh","lakshmii",2,"I","M");
+INSERT INTO student_table VALUES("raaj",99,"ghanshyamm","anitaa",22,"T","M");
+INSERT INTO student_table VALUES("akasu",197,"tud","tudu",16,"L","M");
+INSERT INTO student_table VALUES("mhehrea",15,"fraquee","goveendi",58,"J","F");
+INSERT INTO student_table VALUES("abhishakke",56,"goveind","liila",54,"O","M");
+
+ #now for second table
+ INSERT INTO teacher_table VALUES("amit sir",1,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",2,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",3,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",4,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",5,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",6,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",7,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",8,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",9,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",10,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",11,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",12,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",13,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",14,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",15,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",16,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",18,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",19,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",20,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",21,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",22,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",23,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",24,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",25,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",1,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",2,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",3,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",4,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",5,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",6,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",7,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",8,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",9,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",10,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",11,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",12,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",13,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",14,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",15,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",16,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",18,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",19,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",20,"M","maths");
+ INSERT INTO teacher_table VALUES("amit sir",21,"M","maths");
+ 
+ #now for third table
+ INSERT INTO staff VALUES("ajay",26,"secratory","M");
+ INSERT INTO staff VALUES("ajay",27,"secratory","M");
+ INSERT INTO staff VALUES("ajay",28,"secratory","M");
+ INSERT INTO staff VALUES("ajay",29,"secratory","M");
+ INSERT INTO staff VALUES("ajay",30,"secratory","M");
+ INSERT INTO staff VALUES("ajay",31,"secratory","M");
+ INSERT INTO staff VALUES("ajay",32,"secratory","M");
+ INSERT INTO staff VALUES("ajay",33,"secratory","M");
+ INSERT INTO staff VALUES("ajay",34,"secratory","M");
+ INSERT INTO staff VALUES("ajay",35,"secratory","M");
+ INSERT INTO staff VALUES("ajay",36,"secratory","M");
+ INSERT INTO staff VALUES("ajay",37,"secratory","M");
+ INSERT INTO staff VALUES("ajay",38,"secratory","M");
+ INSERT INTO staff VALUES("ajay",39,"secratory","M");
+ INSERT INTO staff VALUES("ajay",40,"secratory","M");
+ INSERT INTO staff VALUES("ajay",26,"secratory","M");
+ INSERT INTO staff VALUES("ajay",27,"secratory","M");
+ INSERT INTO staff VALUES("ajay",28,"secratory","M");
+ INSERT INTO staff VALUES("ajay",29,"secratory","M");
+ INSERT INTO staff VALUES("ajay",30,"secratory","M");
+ INSERT INTO staff VALUES("ajay",31,"secratory","M");
+ INSERT INTO staff VALUES("ajay",32,"secratory","M");
+ INSERT INTO staff VALUES("ajay",33,"secratory","M");
+ INSERT INTO staff VALUES("ajay",34,"secratory","M");
+ INSERT INTO staff VALUES("ajay",35,"secratory","M");
+
+ # To delete a column
+ ALTER TABLE staff COLUMN gender;
+
+ 
+ 
