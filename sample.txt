@@ -207,6 +207,9 @@ INSERT INTO student_table VALUES("abhishakke",56,"goveind","liila",54,"O","M");
 
  # To delete a column
  ALTER TABLE staff COLUMN gender;
+ 
+ #to see all the contents of any table for example(table of student_table)
+ SELECT * FROM student_table;
 
  
  
